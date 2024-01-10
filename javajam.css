@@ -1,3 +1,7 @@
+*{
+       box-sizing: border-box;
+}
+
 body { 
        background-color: #FCEBB6;
        color: #221811;
@@ -7,33 +11,43 @@ body {
 }
 
 #wrapper { 
-       background-color: #FEFAEB;
+       background-color: #231814;
        margin-left: auto;
        margin-right: auto;
        width: 80%;
        min-width: 900px;
        max-width: 1280px;
        box-shadow: 3px 3px 3px #676767;
+       padding: 0;
 }   
 
 header { 
        background-color: #D2B48C; 
        color: #8C3826; 
-       text-align: center; 
        padding-top: 5px;
        padding-bottom: 5px;
+       background-image: url(coffeelogo.jpg);
+       background-repeat: no-repeat;
+       padding-left: 240px;
+       color: #231814;
+
 }
 
 h1 { 
        font-size: 3em; 
+       color: #221811;
 }
 
 h2 { 
        color: #8C3826; 
+       padding-left: 3em;
+       padding-right: 2em;
 }
 
 h3, dt{
        color: #8C3826;
+       padding-left: 3em;
+       padding-right: 2em;
 }
 
 h4{
@@ -41,6 +55,12 @@ h4{
        font-size: 1.2em;
        padding-left: .5em;
        padding-bottom: .25em;
+       padding-left: 3em;
+       padding-right: 2em;
+       text-transform: uppercase;
+       border-bottom: 1px solid #221811;
+       padding-bottom: 0;
+       clear: left;
 }
 
 nav { 
@@ -49,6 +69,10 @@ nav {
        font-size: 1.5em;
        padding-top: 5px;
        padding-bottom: 5px;
+       float: left;
+       width: 200px;
+       list-style: none;
+       padding-left: 0;
 }
 
 nav a{
@@ -56,10 +80,14 @@ nav a{
 }
 
 main{
-       padding-left: 2em;
-       padding-right: 2em;
+       padding-left: 0;
+       padding-right: 0;
        padding-bottom: 2em;
+       padding-bottom: 0;
        display: block;
+       margin-left: 200px;
+       background-color: #FEF6C2;
+       overflow: auto;
 }
 
 footer { 
@@ -75,6 +103,7 @@ footer {
 .details{
        padding-left: 20%;
        padding-right: 20%;
+       overflow: auto;
 }
 
 img{
@@ -87,4 +116,57 @@ img{
        background-image: url(hero.jpg);
        background-size: cover;
        background-repeat: no-repeat;
+       background-size: 100%100%;
+
 }
+
+#heromugs{
+       height: 255px;
+       background-image: url(heromugs.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-size: 100%100%;
+}
+
+#heroguitar{
+       height: 255px;
+       background-image: url(heroguitar.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-size: 100%100%;
+}
+
+p, div, ul, dl{
+       padding-left: 3em;
+       padding-right: 2em;
+}
+
+a:link{
+       color: #FEF6C2;
+}
+
+a:visited{
+       color: #D2B48C; 
+}
+
+a:hover{
+       color: #CC9933;
+}
+
+.floatleft{
+       float: left;
+       padding-right: 2em;
+       padding-bottom: 2em;
+}
+
+.onethird{
+       float: left;
+       width: 33%;
+}
+
+.floatleft{
+       float: left;
+       padding-right: 2em ;
+       padding-bottom: 2em;
+}
+
